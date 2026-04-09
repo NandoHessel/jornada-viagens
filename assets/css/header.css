@@ -3,19 +3,26 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; /* muda de flex-start para center */
   padding: 38px 48px;
   position: relative;
 }
 
-#logoJornadaViagemId {
+.logo-mobile {
   display: inline-block;
   width: 68px;
   height: 64px;
 }
 
-#divNavigationId {
-  margin-top: 25px;
+.logo-mobile {
+  display: block;
+}
+.logo-desktop {
+  display: none;
+}
+
+.navigation-menu {
+  margin-top: 20px;
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -33,6 +40,7 @@ nav {
 
 .list-link {
   list-style: none;
+  font-weight: var(--menu-text-weight);
 }
 
 .list-link li {
@@ -42,4 +50,52 @@ nav {
 .list-link li a {
   color: var(--text-secundary-color);
   text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    margin-top: 0; /* remove o margin que empurrava pra baixo */
+    width: 467px;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+  }
+
+  .navigation-menu nav {
+    display: block;
+    position: static; /* tira o absolute para o nav ficar no fluxo normal */
+    width: auto;
+    background-color: transparent;
+  }
+
+  .list-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .list-link li {
+    margin: 0; /* remove margem vertical dos itens */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .navigation-menu a:hover {
+    color: var(--primary-color); /* ou outra cor */
+  }
 }
