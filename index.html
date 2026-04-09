@@ -16,31 +16,48 @@
     <header>
       <a href="index.html" title="Voltar para a página inicial">
         <img
+          id="logoJornadaViagemId"
           src="img/Logo-provisória-branca 1.png"
           alt="Bussola dal ogo do Jornada Viagens an cor preta"
         />
       </a>
-      <img src="img/menu.png" alt="menu" />
-      <nav>
-        <ul>
-          <li>
-            <a href="blog.html" target="_blank" title="Acessar blog">Blog</a>
-          </li>
-          <li>
-            <a
-              href="pacotes.html"
-              target="_blank"
-              title="Acessar pacotr de viagem"
-              >Pacote de viagem</a
-            >
-          </li>
-          <li>
-            <a href="contato.html" target="_blank" title="Acessar contato"
-              >Contato</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div id="divNavigationId">
+        <label for="checkboxMenuId">
+          <img src="img/menu.png" alt="menu" id="menuId" />
+        </label>
+        <input type="checkbox" name="checkboxMenu" id="checkboxMenuId" hidden />
+        <nav id="linksNavigationId">
+          <ul>
+            <li>
+              <a
+                href="blog.html"
+                target="_blank"
+                title="Acessar blog"
+                id="blogId"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="pacotes.html"
+                target="_blank"
+                title="Acessar pacotr de viagem"
+                id="pacoteDeViagensId"
+                >Pacote de viagem</a
+              >
+            </li>
+            <li>
+              <a
+                href="contato.html"
+                target="_blank"
+                title="Acessar contato"
+                id="contatoId"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <footer></footer>
