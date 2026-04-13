@@ -43,7 +43,7 @@ body {
   color: var(--text-primary-color);
 }
 
-.section-title h2 {
+.section-title h4 {
   font-size: 28px;
   font-weight: var(--text-weight);
   margin: 0px;
@@ -57,11 +57,27 @@ body {
   margin: 16px auto 32px;
 }
 
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 64px;
+  color: var(--text-secundary-color);
+  font-size: 20px;
+  font-weight: var(--title-weight);
+  background-color: var(--secundary-color);
+  border-radius: 16px;
+  text-decoration: none;
+  line-height: 64px;
+}
+
 @media screen and (min-width: 768px) {
-  .section-title h2 {
+  .section-title h4 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--primary-color);
+  }
 }

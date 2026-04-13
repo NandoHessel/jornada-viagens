@@ -4,7 +4,7 @@
   background: url("../img/banner-home-page-mobile.png") no-repeat center / cover;
 }
 
-.hero h2 {
+.hero p {
   padding: 88px 24px;
   margin: 0px;
   font-weight: var(--text-weight);
@@ -19,7 +19,7 @@
     background-image: url("../img/banner-hero-tablet1.png");
   }
 
-  .hero h2 {
+  .hero p {
     padding: 88px 60px;
     font-size: 32px;
   }
@@ -30,7 +30,7 @@
     background-image: url("../img/banner-hero-desktop.png");
   }
 
-  .hero h2 {
+  .hero p {
     padding: 88px 60px;
     font-size: 32px;
   }
