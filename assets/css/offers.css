@@ -1,3 +1,8 @@
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+}
+
 .cards {
   color: var(--text-secundary-color);
   width: 312px;
@@ -63,9 +68,22 @@
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: -10px; /* era 16px, reduza ao gosto */
+  }
+
+  .cards {
+    margin: 12px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .cards {
-    width: 588px;
+    width: 420px;
     height: 308px;
   }
 
@@ -75,5 +93,11 @@
 
   .cards h3 {
     font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cards {
+    width: 488px;
   }
 }
