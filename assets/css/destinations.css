@@ -1,7 +1,106 @@
+.popular-destinations {
+  width: 312px;
+  margin: 0px auto;
+}
+
+.destination-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
 .destination-itens header {
   display: block;
   background-color: transparent;
   position: static;
   padding: 0px;
   margin-bottom: 24px;
+}
+
+.popular-destinations .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+
+.img-item.tokio {
+  background: url(../img/popular-destinations/tokio-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-item.osaka {
+  background: url(../img/popular-destinations/Osaka-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.popular-destinations p {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.item footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-destinations {
+    width: 648px;
+  }
+
+  .popular-destinations .item .img-item {
+    height: 452px;
+  }
+
+  .img-item.tokio {
+    background: url(../img/popular-destinations/Tokyo-desktop.jpg);
+  }
+
+  .img-item.osaka {
+    background: url(../img/popular-destinations/Osaka-desktop.jpg);
+  }
+
+  .item footer {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .popular-destinations {
+    width: 950px;
+  }
+
+  .destination-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .img-item.tokio {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .img-item.osaka {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .popular-destinations {
+    width: 1180px;
+  }
 }
