@@ -1,0 +1,49 @@
+.footer-pages {
+  background-color: var(--background-tertiary-color);
+  height: 316px;
+  padding: 32px;
+  color: var(--text-secundary-color);
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-pages p {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.logo-footer img {
+  display: inline-block;
+  height: 40px;
+  width: 162px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0px;
+}
+
+.acesse-redes {
+  margin-top: 32px;
+}
+
+.icons {
+  margin-top: 8px;
+  margin: 8px;
+}
+
+.icons img {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 32px 128px;
+  }
+}
